@@ -1,4 +1,14 @@
 #!/usr/bin/python2.7
+# This script compiles a MA-PDDL domain and problem (with wait preconditions described by a file called waitfor.txt
+# Into several PDDL domain and problem files
+#    - one for adversarial for each agent
+#    - one for rational without waiting
+#    - one for rational with waiting
+#    - one for each agent's projection
+# This script is based on the compilation from MA-PDDL to centralized PDDL by 
+#   Michal Štolba (Czech Technical University in Prague, Czech Republic)
+#   Antonín Komenda (Czech Technical University in Prague, Czech Republic)
+#   Dániel Laszlo Kovacs (Budapest University of Technology and Economics, Hungary)
 
 import sys
 import os
